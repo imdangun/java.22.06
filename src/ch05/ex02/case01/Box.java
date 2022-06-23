@@ -14,6 +14,7 @@ public class Box {
 	
 	public void setA(int a) {
 		this.a = a;
+		
 	}
 	
 	public void setB(int b) {
