@@ -9,5 +9,14 @@ public class Main {
 		browser.out();
 		
 		UI.in();
+		
+		System.out.println();
+		Chrome chrome = new Chrome();
+		//chrome.in();
+		chrome.out();
+		
+		chrome.play();
+		Chrome.play();
+		Browser.play();
 	}
 }
