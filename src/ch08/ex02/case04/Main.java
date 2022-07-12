@@ -15,7 +15,7 @@ public class Main {
 		
 		choice = 7;
 		Job job = null;
-		switch((job =Job.toJob2(choice) != null ? job : Job.EXIT)) {
+		switch((job = Job.toJob2(choice)) != null ? job : Job.EXIT) {
 		case EXIT: jobName = "종료"; break;
 		case LIST: jobName = "목록"; break;
 		case ADD: jobName = "추가"; break;

@@ -8,7 +8,6 @@ public class Main {
 		User user1 = new User("최한석", Level.COPPER);
 		User user2 = new User("한아름", Level.SILVER);
 		User user3 = new User("양승일", Level.GOLD);
-		
 		List<User> users = Arrays.asList(user1, user2, user3);
 		
 		users.forEach(user -> {

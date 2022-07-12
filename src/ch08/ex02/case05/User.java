@@ -8,10 +8,10 @@ public class User {
 		this.name = name;
 		this.level = level;
 	}
-
+	
 	public void upgradeLevel() {
-		Level nextLevel = level.next();		
-		if(nextLevel == null)
+		Level nextLevel = level.next();
+		if(nextLevel == null) 
 			throw new IllegalStateException(
 					"이미 최고 등급 " + this.level + "입니다.");
 		
@@ -20,6 +20,6 @@ public class User {
 	
 	@Override
 	public String toString() {
-		return String.format("%s %s", name, level);
+		return String.format("%s, %s", name, level);
 	}
 }
