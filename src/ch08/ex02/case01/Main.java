@@ -2,14 +2,12 @@ package ch08.ex02.case01;
 
 public class Main {
 	public static void main(String[] args) {
-		Day day = Day.TUESDAY;
+		Way way = Way.LEFT;
+		String direction = "";
 		
-		String dayName = "";
-		switch(day) {
-		case MONDAY: dayName = "월요일"; break;
-		case TUESDAY: dayName = "화요일";
-		}
+		if(way == Way.LEFT) direction = "왼쪽";
+		else direction = "오른쪽";
 		
-		System.out.println(dayName);
+		System.out.println(direction);
 	}
 }

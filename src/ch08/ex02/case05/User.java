@@ -1,4 +1,4 @@
-package ch08.ex02.case02;
+package ch08.ex02.case05;
 
 public class User {
 	private String name;
@@ -10,7 +10,7 @@ public class User {
 	}
 
 	public void upgradeLevel() {
-		Level nextLevel = level.next();
+		Level nextLevel = level.next();		
 		if(nextLevel == null)
 			throw new IllegalStateException(
 					"이미 최고 등급 " + this.level + "입니다.");

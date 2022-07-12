@@ -1,22 +1,15 @@
 package ch08.ex02.case02;
 
-import java.util.Arrays;
-import java.util.List;
-
 public class Main {
 	public static void main(String[] args) {
-		User user1 = new User("최한석", Level.COPPER);
-		User user2 = new User("한아름", Level.SILVER);
-		User user3 = new User("양승일", Level.GOLD);
+		Way way = Way.LEFT;
+		String direction = "";
 		
-		List<User> users = Arrays.asList(user1, user2, user3);
+		switch(way) {
+		case LEFT: direction = "왼쪽"; break;
+		case RIGHT: direction = "오른쪽";
+		}
 		
-		users.forEach(user -> {
-			try {
-				user.upgradeLevel();
-			} catch(IllegalStateException e) {}
-		});
-		
-		System.out.println(users);
+		System.out.println(direction);
 	}
 }
